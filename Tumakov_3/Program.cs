@@ -15,12 +15,14 @@ namespace Tumakov3
             Console.WriteLine("Введите что-нибудь, чтобы закрыть консоль");
             Console.ReadKey();
         }
+
+        /// <summary>
+        /// Метод выводит число и месяц по порядковому номеру дня
+        /// Входные данные: номер дня (int), високосный год (bool)
+        /// </summary>
+        /// <returns> - </returns>
         static void Day(int day, bool leapYear = false)
         {
-            ///summary
-            ///Метод принимает номер дня и возврвщает число. Обработка исключений производится непосредственно во втором задании и на всякий случай здесь
-            ///summary
-
             int month = -1;
             int[] monthsDays = { 31, leapYear == true ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
@@ -79,12 +81,13 @@ namespace Tumakov3
                     break;
             }
         }
+
+        /// <summary>
+        /// Вывести число и месяц по порядковому числу дня без проверки на существование такого дня
+        /// </summary>
+        /// <returns> - </returns>
         static void Task1()
         {
-
-            //
-            //
-            //
             Console.WriteLine("Упражнение 4.1\n");
             Console.WriteLine("Введите целое число от 1 до 365 - номер дня в году");
             int dayNum1;
@@ -103,11 +106,13 @@ namespace Tumakov3
             }
             Day(dayNum1);
         }
+
+        /// <summary>
+        /// Вывести число и месяц по порядковому числу дня (1 <-> 365)
+        /// </summary>
+        /// <returns> - </returns>
         static void Task2()
         {
-            //
-            //
-            //
             Console.WriteLine("Упражнение 4.2\n");
             Console.WriteLine("Введите целое число от 1 до 365 - номер дня в году");
             int dayNum2;
@@ -126,11 +131,13 @@ namespace Tumakov3
             }
             Day(dayNum2);
         }
+
+        /// <summary>
+        /// Вывести число и месяц по порядковому числу дня (1 <-> 365) с учётом високосного года
+        /// </summary>
+        /// <returns> - </returns>
         static void Task3()
         {
-            //
-            //
-            //
             Console.WriteLine("Упражнение 4.2\n");
             Console.WriteLine("Введите год");
             int year;

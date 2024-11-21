@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace homework3
 {
     internal class Program
@@ -16,6 +15,12 @@ namespace homework3
             Console.WriteLine("Нажмите что-нибудь для выхода из этого кринжа");
             Console.ReadKey();
         }
+
+        /// <summary>
+        /// Преобразовывает ведённый массив строк в массив чисел
+        /// Вызывается до победного
+        /// </summary>
+        /// <returns> массив double[] </returns>
         static double[] EnterArray()
         {
             string[] array;
@@ -56,11 +61,13 @@ namespace homework3
             return nums;
         }
 
+        /// <summary>
+        /// Проверить, является ли введённый массив длины 10 возрастающим.
+        /// Если нет, то выводит индекс, на котором возрастание нарушается.
+        /// </summary>
+        /// <returns> - </returns>
         static void Task1()
         {
-            //
-            //
-            //
             Console.WriteLine("1 задание\n");
 
             double[] nums = EnterArray();
@@ -76,11 +83,12 @@ namespace homework3
             Console.WriteLine("Последовательность упорядочена по возрастанию");
         }
 
+        /// <summary>
+        /// Вывести название карты по её номеру (6 <-> 14) с исп. try - catch - finally
+        /// </summary>
+        /// <returns> - </returns>
         static void Task2()
         {
-            //
-            //
-            //
             Console.WriteLine("2 задание\n");
             try
             {
@@ -104,11 +112,13 @@ namespace homework3
             }
 
         }
+
+        /// <summary>
+        /// Программа принимает на входе строку и производит выходные данные в соответствии с таблицей
+        /// </summary>
+        /// <returns> - </returns>
         static void Task3()
         {
-            //
-            //
-            //
             Console.WriteLine("3 задание\n");
 
             Console.WriteLine("Скажи мне, кто ты, и я скажу, чем садить печень");
@@ -139,11 +149,13 @@ namespace homework3
                     break;
             }
         }
+
+        /// <summary>
+        /// Вывести день недели по номеру с исп. enum
+        /// </summary>
+        /// <returns> - </returns>
         static void Task4()
         {
-            //
-            //
-            //
             Console.WriteLine("4 задание\n");
 
             Console.WriteLine("Введите порядковый номер дня недели (1 - 7)");
@@ -167,11 +179,15 @@ namespace homework3
             }
 
         }
+
+        /// <summary>
+        /// Создать массив строк. При помощи foreach обойти весь массив. 
+        /// При встрече элемента "Hello Kitty" или "Barbie doll" необходимо положить их в “сумку”, т.е.прибавить к результату.
+        /// Вывести на экран количество кукол в “сумке”.
+        /// </summary>
+        /// <returns> - </returns>
         static void Task5()
         {
-            //
-            //
-            //
             Console.WriteLine("5 задание\n");
 
             // string[] dolls = {"Hello Kitty", "Teddy Bear", "Mr. Monopoly", "Hello Kitty", "Barbie doll"}
@@ -188,6 +204,7 @@ namespace homework3
             }
             Console.WriteLine($"Кукол в сумке = {bag}");
         }
+
         public enum Cards
         {
             Шестёрка = 6,
@@ -200,6 +217,7 @@ namespace homework3
             Король = 13,
             Туз = 14
         }
+
         public enum Week
         {
             понедельник = 1,
